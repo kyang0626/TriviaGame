@@ -1,0 +1,112 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Totally Trivial Trivia!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+
+    <!--- Jquery Source --->
+    <script src="http://code.jquery.com/jquery-3.3.1.js" 
+     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+     <!--- JavaScript Source --->
+    <script src="../javascript/app.js"></script>
+    
+</head>
+<body>
+
+
+<main>
+
+    <header>Totally Trivial Trivia!</header>
+    <br>
+
+    <div class="display" id="time-remaining">Time Remaining:<span id="count-number"></span></div>
+
+    <div class="questions">
+        <p id="question-one">Who is the U.S. first president?</p>
+        <form>
+            <input type ="radio" name="q1" value="right"> George Washington <input type ="radio" name="q1" value="wrong"> Abraham Lincoln 
+            <input type ="radio" name="q1" value="wrong"> Donald Trump <input type ="radio" name="q1" value="wrong"> George W. Bush
+        </form>
+        
+        
+        <p id="question-two">Which of the following character did not die in the movie Avengers: Infinity War?</p>
+        <form>
+            <input type="radio" name="q2" value="wrong"> Spiderman <input type="radio" name="q2" value="wrong"> Black Panther
+            <input type="radio" name="q2" value="wrong"> Star Lord<input type="radio" name="q2" value="right"> Hawkeye
+        </form>
+        
+        
+        <p id="question-three">In what season, did Jon Snow from the Game of Thrones was killed?</p>
+        <form>
+            <input type="radio" name="q3" value="wrong"> one<input type="radio" name="q3" value="wrong"> two
+            <input type="radio" name="q3" value="right"> five<input type="radio" name="q3" value="wrong">seven
+        </form>
+
+        
+        <p id="question-four">What is the best-selling food at Walmart?</p>
+        <form>
+            <input type="radio" name="q4" value="right"> banana<input type="radio" name="q4" value="wrong"> milk
+            <input type="radio" name="q4" value="wrong"> bread<input type="radio" name="q4" value="wrong"> meat
+        </form>
+                
+        <p id="question-five">What does HTML stand for?</p>
+        <form>
+            <input type="radio" name="q5" value="wrong"> Hypertext Markdown Language<input type="radio" name="q5" value="right"> Hypertext Markup Language
+            <input type="radio" name="q5" value="wrong"> How-To-Makeup-Language<input type="radio" name="q5" value="wrong"> Hypertext Marketing Language
+        </form>
+
+        <p id="question-six">Who is the founder of Amazon,Inc.?</p>
+        <form>
+            <input type="radio" name="q6" value="wrong"> Elon Musk<input type="radio" name="q6" value="right"> Jeff Bezos
+            <input type="radio" name="q6" value="wrong"> Steve Jobs<input type="radio" name="q6" value="wrong"> Dana Pena
+        </form>
+
+        <p id="question-seven">How many countries are in the world today, in 2019?</p>
+        <form>
+            <input type="radio" name="q7" value="right"> 195<input type="radio" name="q7" value="wrong"> 50
+            <input type="radio" name="q7" value="wrong"> 216<input type="radio" name="q7" value="wrong"> 187
+        </form>
+        
+        <p id="question-eight">What does API stand for in programming?</p>
+        <form>
+            <input type="radio" name="q8" value="wrong"> Advance Personal Interface<input type="radio" name="q8" value="wrong"> Automatic Personal Integration
+            <input type="radio" name="q8" value="wrong"> Autommatic Programming Intelligence<input type="radio" name="q8" value="right"> Application Program Interface
+        </form>
+
+        <p id="question-nine">What is  is a high-level, interpreted programming language that conforms to the ECMAScript specification. 
+                              It is a programming language that is characterized as dynamic, weakly typed, 
+                              prototype-based and multi-paradigm?</p>
+        <form>
+            <input type="radio" name="q9" value="right"> javascript<input type="radio" name="q9" value="wrong"> C++
+            <input type="radio" name="q9" value="wrong"> python<input type="radio" name="q9" value="wrong"> Ruby on Rails
+        </form>
+        <p id="question-ten">The technologically advanced humanoid robot ASIMO is made by which car company?</p>
+        <form>
+            <input type="radio" name="q10" value="right"> Honda<input type="radio" name="q10" value="wrong"> Toyota
+            <input type="radio" name="q10" value="wrong"> Chevrolet<input type="radio" name="q10" value="wrong"> Audi
+        </form>
+    </div>
+    <br>   
+
+    <button id="done">DONE</button> 
+
+</main>
+
+<section id="time-out">
+
+        <h2>All Done!</h2>
+    
+        <p>Correct answers:<span id="correct"></span></p>
+        <p>Incorrect answers:<span id="incorrect"></span></p>
+        <p>Unanswered:<span id="unanswered"></span></p>
+    
+</section>
+
+
+    
+</body>
+</html>
